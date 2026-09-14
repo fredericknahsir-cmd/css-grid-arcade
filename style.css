@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding: 30px;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.panel {
+    background-color: #222;
+    border: 2px solid #777;
+    padding: 20px;
+    min-height: 120px;
+    transition: transform 0.2s;
+}
+
+.panel:hover {
+    transform: scale(1.03);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    grid-auto-rows: minmax(120px, auto);
+}
+
+.game-screen {
+    grid-column: span 3;
+}
+
+.power {
+    grid-row: span 2;
+}
+
+.score {
+    border-color: gold;
+    text-align: center;
+}
+
+.game-screen {
+    grid-column: span 2;
+    border-color: lime;
+    text-align: center;
+}
+
+.player {
+    border-color: cyan;
+}
+
+.mission {
+    border-color: orange;
+}
+
+.inventory {
+    border-color: violet;
+}
+
+.power {
+    grid-row: span 2;
+    border-color: red;
+}
+
+.controls {
+    border-color: deepskyblue;
+}
+
+.bonus {
+    border-color:hotpink;
+}
