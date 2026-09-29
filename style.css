@@ -70,6 +70,25 @@ h1 {
     border-color: violet;
 }
 
+.inventory-items {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.inventory-items span {
+    padding: 8px 10px;
+    border: 1px solid violet;
+    background-color: #181818;
+}
+
+.player-stats > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
 .power {
     grid-row: span 2;
     border-color: red;
@@ -81,4 +100,26 @@ h1 {
 
 .bonus {
     border-color:hotpink;
+}
+
+.controls-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+}
+
+.controls-buttons button {
+    padding: 10px 16px;
+    border: 2px solid deepskyblue;
+    background-color: #111;
+    color: white;
+    cursor: pointer;
+}
+
+.player-stats > div {
+    display: flex;
+    justify-content: column;
+    gap: 5px;
 }
